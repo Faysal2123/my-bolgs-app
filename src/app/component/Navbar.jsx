@@ -44,24 +44,25 @@ export const Navbar = async () => {
           
             <li>
               {user ? (
-                <LogoutLink
+                <Link
                   href="/api/auth/logout"
                   className="btn border border-gray-500 px-2 py-1 rounded-md"
                 >
                   Logout
-                </LogoutLink>
+                </Link>
               ) : (
-                <LoginLink
+                <Link
                   href="/api/auth/login"
                   className="btn border border-gray-500 px-2 py-1 rounded-md"
                 >
                   Login
-                </LoginLink>
+                </Link>
               )}
             </li>
           </ul>
         </div>
       </div>
+    
     </div>
   );
 };
